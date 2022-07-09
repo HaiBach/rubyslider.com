@@ -1,0 +1,61 @@
+/*  Footer Copyright
+---------------------------------------------------------- */
+.copyright {
+  float: left;
+  p {
+    margin-bottom: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  .term {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px dotted #ccc;
+    &:last-child {
+      border-right: none; 
+    }
+  }
+
+  /** Media **/
+  @media only screen and (max-width: 767px) {
+    float: none;
+  }
+}
+
+/* Background color */
+.dark .copyright .term {
+  border-right-color: #666;
+}
+.bg-light .copyright .term {
+  border-right-color: #999;
+}
+.bg-dark .copyright .term {
+  border-right-color: #fff;
+}
+
+
+
+
+
+
+
+/*  Footer Social
+---------------------------------------------------------- */
+.footer {
+  .social {
+    float: right;
+  }
+
+  /** Media **/
+  @media only screen and (max-width: 767px) {
+    .social {
+      position: relative;
+      float: none;
+      margin-top: 10px;
+      [class*="i-"] {
+        margin-right: 20px;
+      }
+    }
+  }
+}

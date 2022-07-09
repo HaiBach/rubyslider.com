@@ -7,7 +7,7 @@ import Navigation from '@/components/Navigation.vue'
 <header id="header" class="wrapper header logo-left">
   <div class="container">
     <!-- Logo -->
-    <a class="logo" href="../templates/" data-mScale="100">RubySlider</a>
+    <a class="logo" href="/" data-mScale="100">RubySlider</a>
 
     <!-- Navigation -->
     <Navigation />

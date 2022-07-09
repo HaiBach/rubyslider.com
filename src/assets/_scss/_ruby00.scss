@@ -229,7 +229,6 @@
 
 /*  Background color
 ============================================================== */
-    .dark                                           { background-color: #444; color: #eee; }
     .bg-light                                       { color: #333; }
     .bg-dark                                        { color: #fff; }
 
@@ -251,37 +250,6 @@
     .bg-dark .show-full > article,
     .bg-dark .show-full > li                        { border-color: hsla(0,0%,100%,.5); }
     .bg-dark .show-full .meta > span                { color: hsla(0,0%,100%,.5) }
-
-
-
-    /* Navigaiton - Pagination - Show - Slider
-    ---------------------------------------------------------- */
-
-    /* Show */
-    .dark .show-list,
-    .dark .show-list > li,
-    .dark .show-full > article,
-    .dark .show-full > li                       { border-color: #666; }
-
-    .dark .show-full > article:hover,
-    .dark .show-full > li:hover                 { border-color: #cc0055; }
-    .dark .show-full .meta > .title             { color: #fff; }
-    .dark .show-full .meta > span               { color: #666; }
-    .dark .show-full .meta:hover > .title       { color: #cc0055; }
-
-
-
-    /* Portfolio
-    ---------------------------------------------------------- */
-    .dark .portfolio.single .meta,
-    .dark .portfolio.single .meta a             { color: #ccc; }
-
-
-
-    /* Layout Box
-    ---------------------------------------------------------- */
-    .layout-box.dark > div,
-    .layout-box .dark                           { background-color: #444; }
 
 
 
@@ -4865,40 +4833,7 @@
     .slogan h6                          { color: #666; }
 
 
-
-
-
-
-/*  Footer Copyright & Social
-============================================================== */
-
-    /*  Footer Copyright
-    ---------------------------------------------------------- */
-    .copyright                                  { float: left; }
-    .copyright p {
-        font-size: .85em;
-        margin-bottom: 0;
-    }
-    .copyright a                                { text-decoration: none; }
-    .copyright .term {
-        padding-right: 10px;
-        margin-right: 10px;
-        border-right: 1px dotted #ccc;
-    }
-    .copyright .term:last-child                 { border-right: none; }
-
-    /* Background color */
-    .dark     .copyright .term                  { border-right-color: #666; }
-    .bg-light .copyright .term                  { border-right-color: #999; }
-    .bg-dark  .copyright .term                  { border-right-color: #fff; }
-
-
-    /*  Footer Social
-    ---------------------------------------------------------- */
-    .footer .social                             { float: right; }
-
-    /* Background color */
-    .dark .footer .social                       { color: #999; }
+    
 
 
 
@@ -4987,33 +4922,10 @@
     .map                                        { height: 400px; }
 
 
-    /*  Footer Copyright
-    ---------------------------------------------------------- */
-    .copyright                                  { float: none; }
-
-
-    /* Footer Social
-    ---------------------------------------------------------- */
-    .footer .social {
-        position: relative;
-        float: none;
-        margin-top: 10px;
-    }
-    .footer .social [class*="i-"]               { margin-right: 20px; }
-
 
     /* Backtop
     ---------------------------------------------------------- */
     #backtop                                    { display: none; }
-
-
-
-
-    /* Theme Dark
-    ---------------------------------------------------------- */
-    /* Footer Social */
-    .dark .footer .social .items                { background-color: #222; box-shadow: none; }
-
 }
 
 

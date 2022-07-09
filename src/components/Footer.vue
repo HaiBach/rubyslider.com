@@ -1,10 +1,25 @@
+<script>
+export default {
+  data() {
+    return {
+      year: null
+    }
+  },
+  created() {
+    let date = new Date()
+    this.year = date.getFullYear()
+    console.log(this.year)
+  },
+}
+</script>
+
+
 <template>
 <footer id="footer" class="wrapper footer">
   <div class="container">
-    <!-- Copyright -->
     <div class="copyright">
-        <p>&copy; HaiBach. All Rights Reserved.</p>
+      <p>&copy;{{ this.year }} Nguyen Van Thy. All Rights Reserved.</p>
     </div>
   </div>
-</footer>
+</footer> 
 </template>

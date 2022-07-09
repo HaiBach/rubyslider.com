@@ -1,0 +1,70 @@
+.dark {
+  background-color: #444;
+  color: #eee;
+
+  // Show
+  .show-list {
+    &, > li {
+      border-color: #666;
+    }
+  }
+  .show-full {
+    > article, > li {
+      border-color: #666;
+    }
+    > article, > li {
+      &:hover {
+        border-color: #cc0055;
+      }
+    }
+    .meta {
+      > .title {
+        color: #fff;
+      }
+      > span {
+        color: #666;
+      }
+      &:hover {
+        > .title {
+          color: #cc0055;
+        }
+      }
+    }
+  }
+
+  // Portfolio
+  .portfolio {
+    &.single {
+      .meta, .meta a {
+        color: #ccc;
+      }
+    }
+  }
+
+  // Footer
+  .footer {
+    .social {
+      color: #999;
+    }
+  }
+
+  /** Media **/
+  @media only screen and (max-width: 767px) {
+    .footer {
+      .social .items {
+        background-color: #222;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+
+
+
+/* Layout Box
+---------------------------------------------------------- */
+.layout-box.dark > div,
+.layout-box .dark {
+  background-color: #444;
+}
