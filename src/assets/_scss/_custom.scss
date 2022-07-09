@@ -63,12 +63,9 @@ body {
     float: left;
     width: 164px; height: 40px;
     padding-bottom: 0;
-    background: url(../imgs/logo-light.svg) no-repeat transparent center -5px;
+    background: url(/img/logo-light.svg) no-repeat transparent center -5px;
     text-indent: -9999px;
     cursor: pointer;
-}
-.ie8 .logo {
-    background-image: url(../imgs/logo-light.png);
 }
 .logo:hover {
     background-position: center -55px;
