@@ -1,5 +1,6 @@
 @charset 'utf-8';
 
+@import './_scss/normalize';
 @import './_scss/rubygrid';
 @import './_scss/ruby00';
 @import './_scss/ruby01';
@@ -7,6 +8,7 @@
 @import './_scss/rubyslider';
 
 @import './_scss/header';
+@import './_scss/menu';
 @import './_scss/footer';
 
 @import './_scss/dark';

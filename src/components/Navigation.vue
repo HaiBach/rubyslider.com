@@ -121,7 +121,7 @@
       </ul>
     </li>
     <li><a href="../documentation/index.html">Docs</a></li>
-    <li><a href="https://codecanyon.net/item/ruby-slider-live-touch-effect-slider/18240185?rel=haibach">Buy now!</a>
+    <li><a href="https://codecanyon.net/item/ruby-slider-live-touch-effect-slider/18240185?rel=haibach">Download</a>
     </li>
   </ul>
 </nav>

@@ -1,0 +1,169 @@
+/* ============================================================
+ * Logo & Menu
+ * ============================================================ */
+ .wrapper.header             { padding-top: 10px; padding-bottom: 0; }
+
+
+
+ /*  Logo
+ ============================================================== */
+   .logo {
+     display: inline-block;
+     padding-bottom: 10px;
+     line-height: 1em;
+   }
+   .logo > * { margin-bottom: 0; }
+   .logo img { display: block; }
+ 
+ 
+   /* Logo position
+   ---------------------------------------------------------- */
+   .logo-left  .logo             { float: left; }
+   .logo-right .logo             { float: right; }
+   .logo-center              { text-align: center }
+   .logo-center .logo {
+     display: inline-block;
+     *display: inline;
+     *zoom: 1;
+   }
+ 
+   .header.logo-center.logo-v3 .logo {
+     position: absolute;
+     margin: 0;
+     z-index: 9;
+   }
+ 
+ 
+   /* Logo with Mobile-alter & Mobile scale
+   ---------------------------------------------------------- */
+   .logo.m-alter img,
+   .logo.m-scale img             { display: none;  }
+   .logo.m-alter img:first-child,
+   .logo.m-scale img:first-child       { display: block; }
+ 
+ 
+   @media only screen and (max-width: 767px) {
+ 
+     .logo.m-alter img,
+     .logo.m-scale img           { display: block; }
+     .logo.m-alter img:first-child,
+     .logo.m-scale img:first-child     { display: none;  }
+   }
+
+
+   /*  Logo & Menu Media Queries
+============================================================== */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+  .logo-center .menu-hor > .menu > li > a
+  { padding-left: 28px; padding-right: 28px; }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .wrapper.header               { }
+  .header .container              { overflow: hidden; }
+
+  /* Logo
+  ---------------------------------------------------------- */
+  .logo { padding-bottom: 10px; }
+}
+
+
+
+
+
+
+
+
+/*  Logo & Menu Helper
+============================================================== */
+
+  /* Helper
+  ---------------------------------------------------------- */
+  .helper {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    padding-top: 0 !important;
+    z-index: 10;
+    background-color: #fff;
+    /*box-shadow: 0 1px 0 hsla(0,0%,0%,.1);*/
+  }
+
+  .ie7 .helper            { position: fixed; }
+
+  /* Helper Transition */
+  .csstransitions .helper {
+    -webkit-transform: translateY(-30px);
+       -moz-transform: translateY(-30px);
+        transform: translateY(-30px);
+  }
+  .csstransitions .helper.ready {
+    -webkit-transition: -webkit-transform .15s .1s;
+       -moz-transition:  -moz-transform .15s .1s;
+        transition:     transform .15s .1s;
+  }
+  .csstransitions .helper:hover {
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+        transform: translateY(0);
+  }
+
+  .no-csstransforms .helper       { top: -30px; }
+  .no-csstransforms .helper:hover   { top: 0; }
+
+  /* Helper logo */
+  .helper .logo             { display: none; }
+
+  /* Helper menu */
+  .helper .menu-hor > .menu       { font-size: .85em; }
+
+  /* Easy Hover */
+  .helper:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    top: 100%;
+    width: 100%; height: 29px;    /* IE10: height 30px -> error: bg-color: black ??? */
+    background-color: transparent;
+  }
+
+  /* Header Ghost
+  ---------------------------------------------------------- */
+  .ghost              { display: none; }
+  .ghost.ready          { display: block; visibility: hidden; }
+
+
+  /* Helper background color */
+  .dark.helper          { background-color: #444; }
+
+
+  /* Helper Layout-box
+  ---------------------------------------------------------- */
+  .layout-box .header.helper {
+    left: 50%;
+    width: 1040px;
+    margin-left: -520px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .layout-box .header.helper      { width: 788px; margin-left: -394px; }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .layout-box .header.helper      { width: 320px; margin-left: -160px; }
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .layout-box .header.helper      { width: 480px; margin-left: -240px; }
+  }
+
+
+  /* Helper Responsive
+  ---------------------------------------------------------- */
+  @media only screen and (max-width: 767px) {
+
+    .helper .menu-hor > .menu { font-size: 1em; }
+    .ghost.ready { display: none; }
+  }
