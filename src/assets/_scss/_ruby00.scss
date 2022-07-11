@@ -429,24 +429,47 @@
     padding-left: 5px; padding-right: 5px;
     padding-top: 1px; padding-bottom: 2px;
   }
-  .label.highlight        { background-color: #cc0055; color: #fff; }
-  /*.label.code           { background-color: transparent!important; color: #444; border: 1px dashed #ccc; }*/
-  .label.code           { background-color: #f5f5f5; color: #dd0000; border: 1px dashed #ddd; }
+  .label.highlight {
+    background-color: #cc0055;
+    color: #fff;
+  }
+  .label.code {
+    background-color: #f5f5f5;
+    color: #dd0000;
+    border: 1px dashed #ddd;
+  }
 
   /* Background color */
-  .dark .label          { background-color: #fff; color: #444; }
-  .dark .label.highlight      { background-color: #cc0055; color: #fff; }
-  .dark .label.code         { color: #eee; }
+  .dark .label {
+    background-color: #fff;
+    color: #444;
+  }
+  .dark .label.highlight {
+    background-color: #cc0055;
+    color: #fff;
+  }
+  .dark .label.code {
+    color: #eee;
+  }
 
-  .bg-light .label.code       { border-color: hsla(0,0%,0%,.2); }
+  .bg-light .label.code {
+    border-color: hsla(0,0%,0%,.2);
+  }
 
-  .bg-dark .label         { background-color: #fff; color: #333; }
-  .bg-dark .label.code      { border-color: #fff; color: #fff; }
-
+  .bg-dark .label {
+    background-color: #fff;
+    color: #333;
+  }
+  .bg-dark .label.code {
+    border-color: #fff;
+    color: #fff;
+  }
 
   .bg-hl.dark .label.highlight,
-  .bg-hl.bg-dark .label.highlight
-  { background-color: #333; background-color: hsla(0,0%,0%,.25); }
+  .bg-hl.bg-dark .label.highlight {
+    background-color: #333;
+    background-color: hsla(0,0%,0%,.25);
+  }
 
 
 
@@ -650,8 +673,6 @@
         transform: rotate(-40deg);
   }
   .list[class*="arrow"]:after       { display: none; }    /* remove clearfix */
-  /*.list.arrow-2 li:before,
-  .list.arrow-2 li:after          { width: 3px; height: 6px; }*/
 
   .list[class*="check"] li        { padding-left: 25px; }
   .list[class*="check"] li:before,
@@ -670,11 +691,19 @@
   ul.hover li:hover,
   ul.hover li:hover > *,
   .list.hover li:hover,
-  .list.hover li:hover > *        { color: #cc0055; }
+  .list.hover li:hover > * {
+    color: #cc0055;
+  }
   .list.hover li:hover:before,
-  .list.hover li:hover:after        { background-color: #cc0055; }
-  .list.hover > li:hover ul         { color: #444; }
-  .list.hover.tri li:hover:before     { border-left-color: #cc0055; }
+  .list.hover li:hover:after {
+    background-color: #cc0055;
+  }
+  .list.hover > li:hover ul {
+    color: #444;
+  }
+  .list.hover.tri li:hover:before {
+    border-left-color: #cc0055;
+  }
 
 
   /* List Condensed */
