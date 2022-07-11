@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink } from 'vue-router';
 import Navigation from '@/components/Navigation.vue'
 </script>
 
@@ -7,7 +8,7 @@ import Navigation from '@/components/Navigation.vue'
 <header id="header" class="wrapper header">
   <div class="container">
     <!-- Logo -->
-    <a class="logo" href="/" data-mScale="100">RubySlider</a>
+    <RouterLink class="logo" to="/" data-mScale="100">RubySlider</RouterLink>
 
     <!-- Navigation -->
     <Navigation />

@@ -1,9 +1,17 @@
+<script>
+import { RouterLink } from "vue-router";
+</script>
+
+
 <template>
 <nav class="rm01">
   <ul class="rm01menu">
     <li><a>Slider</a>
       <ul class="rm01menu">
-        <li><a href="page-templates-slider.html">List templates</a></li>
+        <!-- <li><a href="page-templates-slider.html">List templates</a></li> -->
+        <li>
+          <RouterLink to="/slider-list-templates">List templates</RouterLink>
+        </li>
         <li><a>Layout</a>
           <ul class="rm01menu">
             <li><a href="slider-layout-basic.html">Basic</a></li>
