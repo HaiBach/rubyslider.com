@@ -468,23 +468,29 @@ html.rm01push {
 /***** MENU HORIZONTAL *****/
 .rm01hor {
   float: right;
-}
-.rm01hor .rm01list-lv1 > a {
-  border: 1px solid transparent;
-  border-radius: 4px;
-  color: #fff;
-}
-.rm01hor .rm01list-lv1:hover > a,
-.rm01hor .rm01list-lv1.rm01list.rm01open > a {
-  background-color: #fff;
-  border-color: #cc0055;
-  color: #666;
-  > .rm01caret {
-    &::before {
-      background-color: #666;
+  .rm01list-lv1 {
+    > a {
+      border: 1px solid transparent;
+      border-radius: 4px;
+      color: #fff;
+      &:hover {
+        border-color: rgba($color: #fff, $alpha: .75);
+      }
     }
-    &::after {
-      display: none;
+    &.rm01open {
+      > a {
+        background-color: #fff;
+        border-color: #cc0055;
+        color: #666;
+        > .rm01caret {
+          &::before {
+            background-color: #666;
+          }
+          &::after {
+            display: none;
+          }
+        }
+      }
     }
   }
 }
