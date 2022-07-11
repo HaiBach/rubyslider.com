@@ -72,7 +72,7 @@ export default {
 </template>
 
 
-<style lang="scss">
+<style scoped>
 .wrapper {
   overflow: hidden;
   padding-bottom: 100px;
@@ -80,7 +80,9 @@ export default {
 .title-head h1 {
   letter-spacing: 4px;
 }
+</style>
 
+<style lang="scss">
 .slider-preview {
   > .rs01viewport {
     overflow: visible;

@@ -4,7 +4,7 @@ import Navigation from '@/components/Navigation.vue'
 
 
 <template>
-<header id="header" class="wrapper header logo-left">
+<header id="header" class="wrapper header">
   <div class="container">
     <!-- Logo -->
     <a class="logo" href="/" data-mScale="100">RubySlider</a>

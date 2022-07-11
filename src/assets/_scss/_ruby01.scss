@@ -73,9 +73,11 @@
 }
 .rm01hor .rm01list {
   position: relative;
+  // padding-left: 8px;
+  // padding-right: 8px;
 }
 .rm01hor .rm01list > a {
-  padding: 10px 25px;              /* Height 40 px */
+  padding: 10px 20px;
 }
 
 
@@ -85,7 +87,7 @@
 }
 .rm01hor .rm01list-lv1 > a {
   float: left;
-  margin-right: 1px;
+  margin-right: 10px;
 }
 
 
@@ -120,10 +122,35 @@
 
 
 /***** MENU CARET *****/
-.rm01hor .rm01list-lv1 > a > .rm01caret:after {
-  content: "+";
-  padding-left: 10px;
+.rm01hor {
+  .rm01list-lv1 {
+    > a {
+      > .rm01caret {
+        position: relative;
+        display: inline-block;
+        margin-left: 12px;
+        width: 7px;
+        height: 10px;
+        &::before, &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: calc(50% - 1px);
+          width: 100%;
+          height: 1px;
+          background-color: #fff;
+        }
+        &::after {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
 }
+// .rm01hor .rm01list-lv1 > a > .rm01caret:after {
+//   content: "+";
+//   padding-left: 10px;
+// }
 .rm01hor .rm01menu .rm01menu .rm01caret:after {
   content: "\0203A";
   display: block;
@@ -380,8 +407,10 @@
 .rm01btn-toggle span {
   display: block;
   position: relative;
-  width: 18px; height: 3px;
-  margin-left: -33px; margin-bottom: 3px;
+  width: 18px;
+  height: 3px;
+  margin-left: -33px;
+  margin-bottom: 3px;
   right: -100%;
   background-color: rgba(0,0,0,0.4);
   box-shadow: 0 1px 0 rgba(255,255,255,0.2);
@@ -442,7 +471,7 @@ html.rm01push {
 }
 .rm01hor .rm01list-lv1 > a {
   border: 1px solid transparent;
-  border-radius: 3px;
+  border-radius: 4px;
   color: #fff;
 }
 .rm01hor .rm01list-lv1:hover > a,
@@ -450,21 +479,29 @@ html.rm01push {
   background-color: #fff;
   border-color: #cc0055;
   color: #666;
+  > .rm01caret {
+    &::before {
+      background-color: #666;
+    }
+    &::after {
+      display: none;
+    }
+  }
 }
 .rm01hor .rm01list-parent-lv1.rm01list.rm01open > a {
-  border-radius: 3px 3px 0 0;
+  border-radius: 4px 4px 0 0;
 }
 
 .rm01hor .rm01menu .rm01menu {
   background-color: #fff;
   border: 1px solid #cc0055;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 .rm01hor .rm01menu .rm01menu .rm01menu {
   margin-left: 4px;
 }
 .rm01hor .rm01list-parent-lv1 > .rm01menu {
-  border-radius: 0 3px 3px 3px;
+  border-radius: 0 4px 4px 4px;
 }
 .rm01hor .rm01menu .rm01menu .rm01list > a {
   color: #999;
