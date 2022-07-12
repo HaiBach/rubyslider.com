@@ -67,62 +67,72 @@
 .rm01hor {
   display: block;
   position: relative;
-}
-.rm01hor .rm01menu {
-  // font-size: 12px;
-}
-.rm01hor .rm01list {
-  position: relative;
-  // padding-left: 8px;
-  // padding-right: 8px;
-}
-.rm01hor .rm01list > a {
-  padding: 10px 20px;
-}
+  .rm01list {
+    position: relative;
+    > a {
+      padding: 10px 20px;
+    }
+  }
 
+  /***** MENU LEVEL 1 *****/
+  .rm01menu-lv1 {
+    float: left;
+  }
+  .rm01list-lv1 {
+    float: left;
+    > a {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      text-align: center;
+    }
+    &:last-child {
+      > a {
+        margin-right: 0;
+      }
+    }
+  }
 
-/***** MENU LEVEL 1 *****/
-.rm01hor .rm01menu-lv1, .rm01hor .rm01list-lv1 {
-  float: left;
-}
-.rm01hor .rm01list-lv1 > a {
-  float: left;
-  margin-right: 10px;
-}
+  /***** MENU LEVEL 2 - 3 *****/
+  .rm01menu {
+    .rm01menu {
+      position: absolute;
+      width: 200px;
+      margin-left: 0;
+      margin-top: 0;
+      .rm01list {
+        > a {
+          padding-left: 20px;
+          padding-right: 20px;
+          white-space: normal;
+        }
+      }
+    }
+    /***** MENU RIGHT *****/
+    &.rm01right {
+      left: auto;
+      right: 1px;
+    }
+  }
+  .rm01menu-lv2 {
+    left: 0;
+    top: 100%;
+    z-index: 9;
+  }
+  .rm01list {
+    &.rm01open {
+      > .rm01menu {
+        visibility: visible;
+        display: block;
+      }
+    }
+  }
+  .rm01menu-lv3 {
+    left: 100%;
+    top: 0;
+  }
 
-
-/***** MENU LEVEL 2 - 3 *****/
-.rm01hor .rm01menu .rm01menu {
-  position: absolute;
-  width: 200px;
-  margin-left: 0; margin-top: 0;
-}
-.rm01hor .rm01list.rm01open > .rm01menu {
-  visibility: visible;
-  display: block;
-}
-.rm01hor .rm01menu-lv2 {
-  left: 0; top: 100%;
-  z-index: 9;
-}
-.rm01hor .rm01menu-lv3 {
-  left: 100%; top: 0;
-}
-
-.rm01hor .rm01menu .rm01menu .rm01list > a {
-  padding-left: 20px; padding-right: 20px;
-  white-space: normal;
-}
-
-
-/***** MENU RIGHT *****/
-.rm01hor .rm01menu.rm01right {
-  left: auto; right: 1px;
-}
-
-
-/***** MENU CARET *****/
-.rm01hor {
+  /***** MENU CARET *****/
   .rm01list-lv1 {
     > a {
       > .rm01caret {
@@ -146,16 +156,26 @@
       }
     }
   }
-}
-// .rm01hor .rm01list-lv1 > a > .rm01caret:after {
-//   content: "+";
-//   padding-left: 10px;
-// }
-.rm01hor .rm01menu .rm01menu .rm01caret:after {
-  content: "\0203A";
-  display: block;
-  position: absolute;
-  right: 15px; top: 10px;
+  .rm01menu {
+    .rm01menu {
+      .rm01caret::after {
+        content: "\0203A";
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+      }
+    }
+  }
+
+  /***** Menu Icon *****/
+  .menu-icon {
+    display: inline-block;
+    padding-right: 8px;
+    svg {
+      display: block;
+    }
+  }
 }
 
 

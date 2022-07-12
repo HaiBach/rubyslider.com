@@ -2,11 +2,11 @@
 import SliderTypography from '@/components/SliderTypography.vue';
 
 export default {
-  data() {
-    return {}
+  components: {
+    SliderTypography,
   },
   mounted() {
-    window.jQuery('.tabs-custom').rubyslider({
+    jQuery('.tabs-custom').rubyslider({
       optionsPlus: "tabs",
       fx: "line",
       speed: 600,
@@ -22,6 +22,27 @@ export default {
   }
 }
 </script>
+
+<!-- <script setup>
+import { onMounted } from 'vue'
+import SliderTypography from '@/components/SliderTypography.vue'
+
+onMounted(() => {
+  jQuery('.tabs-custom').rubyslider({
+    optionsPlus: "tabs",
+    fx: "line",
+    speed: 600,
+    pag: {
+      align: "center"
+    },
+    isKeyboard: true,
+    isDeeplinking: true,
+    load: {
+      isLazy: false
+    }
+  })
+})
+</script> -->
 
 
 <template>
@@ -646,7 +667,6 @@ export default {
       </div>
       <!-- API TEMPLATES - end
       .......................................................... -->
-    
     </div>
   </div>
   <!-- LIST TEMPLATES - end
