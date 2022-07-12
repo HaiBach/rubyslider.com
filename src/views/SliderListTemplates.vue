@@ -249,15 +249,15 @@ onMounted(() => {
 
 <style scoped>
 .tabs-custom .rs01pagitem {
-  padding: 10px 20px !important;
+  padding: 10px 25px !important;
   margin-left: 10px; margin-right: 10px;
   background-color: #f9f9f9;
   border-radius: 20px;
-  color: #999;
+  color: #333;
 }
 .tabs-custom .rs01pagitem:hover {
   background-color: #e5e5e5;
-  color: #333;
+  color: #000;
 }
 .tabs-custom .rs01pagitem.rs01cur {
   background-color: #cc0055;
